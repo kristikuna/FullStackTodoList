@@ -1,0 +1,8 @@
+
+<!-- input filters added items -->
+<input type="text" placeholder="Filter your to dos" ng-model="itemsAdded">
+
+<ol>
+  <li ng-repeat="item in $ctrl.list | filter: itemsAdded track by $index" hover-state>
+    {{ item }} <button ng-click="$ctrl.rmInfo($index);" type="button" name="remove"><i id="close" class="material-icons">close</i></button></li>
+</ol>

@@ -1,0 +1,23 @@
+<div class="container">
+  <a id="goBack" href="#!/welcomeForm"/><i id="arrowBack"class="material-icons">arrow_back</i>Go Back!</a>
+  <h1>TODO List</h1>
+  <p>A place to store the things you have to do!</p>
+
+    <!-- <task-list list="$ctrl.list"></task-list> -->
+    <input type="text" placeholder="Filter your to-dos" ng-model="itemsAdded">
+
+    <ol>
+      <li ng-repeat="task in $ctrl.tasks | filter: itemsAdded track by $index" hover-state>
+        {{ task.task }}
+       <button ng-click="$ctrl.rmInfo(task);" type="button" name="remove">
+         <i id="close" class="material-icons">close</i></button>
+      </li>
+    </ol>
+<!--
+    <form ng-submit="$ctrl.add($ctrl.input);" method="POST"> -->
+    <!-- input to add items to list -->
+    <input id="addInput" type="text" placeholder="Add your to-do" ng-model="task">
+
+    <button class="addButton" ng-click="$ctrl.addTask(task)">Add</button>
+  <!-- </form> -->
+</div>

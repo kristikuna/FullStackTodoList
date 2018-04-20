@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  font-family: "Open Sans";
+}
+
+.container, .welcomeContainer {
+  background-color: #fff;
+  width: 75%;
+  min-height: 250px;
+  margin: 100px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.welcomeContainer {
+  min-height: 150px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 15px 20px 15px 0px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #CCC;
+  color: black;
+}
+
+#close:hover {
+  cursor: pointer;
+  background-color: #eee;
+  color: #ff0000;
+}
+
+.addButton:hover {
+  opacity: 1;
+}
+
+.addButton:focus, input:focus, .material-icons:focus, #close {
+  outline: 0;
+}
+
+.addButton {
+  opacity: 0.5;
+  background-color: #ff1493;
+  color: #eee;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+li button {
+  float: right;
+  border: none;
+  height: 20px;
+  background-color: inherit;
+}
+
+li {
+  font-size: 20px;
+  padding: 6px;
+  width: 90%;
+}
+
+#goBack{
+  text-decoration: none;
+  color: #ff69b4;
+  position: absolute;
+  font-size: 15px;
+}
+
+#arrowBack{
+  position: relative;
+  font-size: 15px;
+  top: 3px;
+}
+
+
+#enterButton {
+  text-decoration: none;
+  color: #ff69b4;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  position: relative;
+  font-size: 15px;
+}
+
+#arrow {
+  position: absolute;
+  font-size: 15px;
+  top: 3px;
+  left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 30%;
+  }
+  .welcomeContainer {
+    width: 40%;
+    min-height: 150px;
+  }
+  .addButton {
+    width: 97%;
+  }
+
+  #enterButton {
+    margin-top: 30px;
+  }
+}
