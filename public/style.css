@@ -37,8 +37,15 @@ input {
 
 #close:hover {
   cursor: pointer;
-  background-color: #eee;
   color: #ff0000;
+}
+
+#edit:hover {
+  color: blue;
+}
+
+#edit {
+  padding-right: 5px;
 }
 
 .addButton:hover {
@@ -46,7 +53,7 @@ input {
 }
 
 .addButton:focus, input:focus, .material-icons:focus, #close {
-  outline: 0;
+  outline: none;
 }
 
 .addButton {

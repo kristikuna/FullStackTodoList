@@ -6,7 +6,8 @@
     return {
       getList: getList,
       setList: setList,
-      removeInfo: removeInfo
+      removeInfo: removeInfo,
+      updateTask: updateTask
     }
 
     function getList() {
@@ -30,14 +31,18 @@
      return $http({
        method: "DELETE",
        url: "/tasks/" + itemId
-     })
+     });
+   };
+
+   function updateTask(itemId){
+     return $http({
+       method: "PUT",
+       url: "/tasks/" + itemId
+     });
    }
-    // function removeInfo(index) {
-    //   todoList.splice(index, 1);
-    //   console.log("clicked");
-    // }
 
   }
+
   angular
     .module("App")
     .factory("TaskService", TaskService);
